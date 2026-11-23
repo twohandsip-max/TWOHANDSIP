@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>투핸즈특허법률사무소 | TWOHANDS IP</title>
+<meta name="description" content="PCT 국제특허출원, 해외 특허·디자인·상표 출원, 선행기술·무효·침해자료 조사분석 및 IP 컨설팅. 투핸즈특허법률사무소.">
+<style>
+:root{--bg:#ffffff;--bg2:#ffffff;--hero:#ffffff;--fg:#1c2733;--mute:#5a6978;--navy:#16365f;--accent:#d9822b;--line:#cfdcec;--hbg:#16365f;--hfg:#fff;--hmute:#c5d3e6}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1720;--bg2:#17212d;--hero:#17212d;--fg:#e6ecf2;--mute:#9fb0c1;--navy:#8db4e6;--accent:#f0a050;--line:#2a3a4b;--hbg:#0a1624;--hfg:#fff;--hmute:#a9bbd0}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;font-family:"Pretendard","Noto Sans KR","Malgun Gothic",sans-serif;color:var(--fg);background:var(--bg);line-height:1.7}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:10;background:var(--hbg);border-bottom:3px solid var(--accent)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+.logo{font-weight:800;letter-spacing:.5px;color:var(--hfg)}
+.logo .lname{font-weight:600;font-size:1em;margin-left:12px;opacity:1;color:var(--hfg);letter-spacing:0}
+@media(max-width:700px){.logo .lname{display:none!important}}
+.logo b{background:var(--accent);color:#fff;padding:1px 6px;border-radius:3px;margin-left:3px}
+nav a{margin-left:20px;font-size:.95rem;color:var(--hmute)}
+nav a:hover{color:var(--hfg)}
+#lang{border:1px solid var(--hmute);border-radius:4px;padding:1px 10px;color:var(--hfg)}
+html[lang=en] .ko{display:none}
+html:not([lang=en]) .en{display:none}
+.hero{background:var(--hero);padding:84px 0 72px;border-bottom:1px solid var(--line)}
+.hero h1{font-size:clamp(1.15rem,2.7vw,1.75rem);line-height:1.5;margin:0 0 16px;color:var(--navy)}
+.hpts{max-width:760px;margin:0 0 28px;padding:0 0 0 1.2em;color:var(--mute);font-size:1.05rem}
+.hpts li{margin:0 0 6px}
+.hero p{max-width:760px;color:var(--mute);font-size:1.05rem;margin:0 0 28px}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:12px 26px;border-radius:6px;font-weight:700}
+section{padding:64px 0}
+section.alt{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+h2{font-size:1.6rem;color:var(--navy);margin:0 0 8px}
+.sub{color:var(--mute);margin:0 0 32px}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(2,1fr)}
+@media(max-width:640px){.grid{grid-template-columns:1fr}}
+.card{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:22px}
+.card h3{margin:0 0 8px;font-size:1.1rem;color:var(--navy)}
+.card ul{margin:0;padding-left:18px;color:var(--mute)}
+.about{display:block}
+@media(max-width:720px){.about{grid-template-columns:1fr}nav a{margin-left:12px;font-size:.85rem}}
+.profile{text-align:center;padding:28px 18px}
+.avatar{width:150px;height:auto;aspect-ratio:346/449;border-radius:12px;background:var(--line);margin:0 auto 12px;display:block;object-fit:cover;object-position:center top}
+.profile .name{font-weight:800;font-size:1.15rem;color:var(--navy)}
+dl{margin:0;display:grid;grid-template-columns:90px 1fr;gap:8px 12px}
+dt{font-weight:700;color:var(--navy)}dd{margin:0;color:var(--mute)}
+.timeline{list-style:none;margin:0;padding:0;border-left:2px solid var(--line)}
+.timeline li{position:relative;padding:0 0 18px 22px;display:flex;align-items:baseline}
+.timeline li::before{content:"";position:absolute;left:-6px;top:9px;width:10px;height:10px;border-radius:50%;background:var(--accent)}
+.timeline.career li:last-child{padding-bottom:0}
+.timeline b{color:var(--navy);flex:none;width:78px}
+.timeline span{color:var(--mute)}
+.clients{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}
+.client{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:18px 10px;text-align:center;font-weight:700;color:var(--navy)}
+.client small{display:block;font-weight:400;color:var(--mute)}
+.contact p{margin:4px 0;color:var(--mute)}
+.flow{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:12px 28px}
+.flow li{position:relative;background:var(--bg2);border:1px solid var(--line);border-radius:6px;padding:8px 12px;font-size:.88rem;text-align:center;line-height:1.4}
+.flow li:not(:last-child)::after{content:"\2192";position:absolute;right:-22px;top:50%;transform:translateY(-50%);color:var(--accent);font-weight:700}
+.callout{background:var(--bg);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:6px;padding:14px 18px;margin:0 0 20px;color:var(--fg)}
+.htl{display:grid;grid-template-columns:repeat(5,1fr);gap:0 16px;margin-top:18px}
+.hitem{position:relative;padding-top:48px}
+.hyear{position:absolute;top:0;left:0;font-weight:800;color:var(--navy);font-size:1rem}
+.hitem::before{content:"";position:absolute;top:30px;left:0;right:-16px;height:3px;background:var(--line)}
+.hitem:last-child::before{right:0}
+.hitem::after{content:"";position:absolute;top:24px;left:0;width:15px;height:15px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px var(--bg)}
+.htext{font-size:.9rem;color:var(--mute);line-height:1.5}
+@media(max-width:1000px){.htl{grid-template-columns:1fr;gap:0}.hitem{padding:0 0 20px 30px}.hyear{position:static;display:block}.hitem::before{top:6px;bottom:-6px;left:6px;right:auto;width:3px;height:auto}.hitem:last-child::before{display:none}.hitem::after{top:4px;left:0}}
+.htl.career-h{grid-template-columns:repeat(8,1fr);gap:0 12px}
+.htl.career-h .hitem{padding-top:34px}
+.htl.career-h .hitem::before{top:8px;right:-12px}
+.htl.career-h .hitem:last-child::before{right:0}
+.htl.career-h .hitem::after{top:2px}
+.htl.career-h .htext{font-size:.85rem}
+@media(max-width:1000px){.htl.career-h{grid-template-columns:1fr;gap:0}.htl.career-h .hitem{padding:0 0 20px 30px}.htl.career-h .hitem::before{top:6px;bottom:-6px;left:6px;right:auto;width:3px;height:auto}.htl.career-h .hitem:last-child::before{display:none}.htl.career-h .hitem::after{top:4px;left:0}}
+.profile.hz{display:flex;align-items:center;gap:26px;text-align:left;padding:20px 28px;width:fit-content;max-width:100%}
+.profile.hz .avatar{margin:0;flex:none}
+.profile.hz .name{font-size:1.5rem}
+.duo{display:grid;grid-template-columns:2fr 1fr;gap:44px;margin-top:40px;align-items:start}
+.duo .subhead{margin-bottom:6px}
+.duo-r .timeline{margin-top:22px}
+@media(max-width:1000px){.duo{grid-template-columns:1fr}}
+.subhead{font-size:1.2rem;color:var(--navy);margin:0 0 6px}
+.note{color:var(--mute);font-size:.85rem;margin:18px 0 0}
+.map{display:block;width:100%;height:340px;border:0;border-radius:10px;margin-top:22px;background:var(--bg2)}
+.maplink{margin:8px 0 0;font-size:.9rem}.maplink a{color:var(--navy);text-decoration:underline}
+footer{padding:28px 0;text-align:center;color:var(--mute);font-size:.85rem;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<a class="logo" href="#top">TWOHANDS<b>IP</b><span class="lname ko">투핸즈특허법률사무소</span><span class="lname en">TWOHANDS Patent&amp;Trademark Office</span></a>
+<nav><a href="#top"><span class="ko">홈</span><span class="en">Home</span></a><a href="#about"><span class="ko">대표변리사</span><span class="en">Attorney</span></a><a href="#office"><span class="ko">사무소 소개</span><span class="en">About Us</span></a><a href="#services"><span class="ko">업무소개</span><span class="en">Services</span></a><a href="#contact"><span class="ko">연락처</span><span class="en">Contact</span></a><a href="#" id="lang"><span class="ko">EN</span><span class="en">한국어</span></a></nav>
+</div></header>
+
+<div class="hero" id="top"><div class="wrap">
+<h1><span class="ko">국제특허법률사무소, 대기업 특허팀, 그리고 대학산학협력단<br>경험을 두루 갖춘 20년 경력의 변리사가 직접 처리합니다</span><span class="en">A patent attorney with 20 years of experience, spanning international patent law firms, a corporate patent team and a university industry-academic cooperation foundation, handles your matters personally</span></h1>
+<p><span class="ko">선행기술조사, 명세서 작성, 의견제출통지서 대응, 등록 관리, 그리고 해외출원까지 변리사가 직접 담당합니다</span><span class="en">Prior art searches, specification drafting, office action responses, registration management and overseas filings are all handled directly by the patent attorney</span></p>
+<ul class="hpts"><li><span class="ko">이해하기 쉽게 설명해 드립니다</span><span class="en">We explain everything in plain, easy-to-understand terms</span></li>
+<li><span class="ko">절차, 소요기간, 해야 할 일을 사례별로 상세하게 설명해 드립니다</span><span class="en">We explain procedures, timelines and what you need to do in detail, case by case</span></li>
+<li><span class="ko">정부지원사업을 적극적으로 활용하여 비용 부담을 덜어 드립니다</span><span class="en">We actively use government support programs to ease your cost burden</span></li></ul>
+<a class="btn" href="#contact"><span class="ko">상담 문의</span><span class="en">Contact Us</span></a>
+</div></div>
+
+<section id="about"><div class="wrap">
+<h2><span class="ko">대표변리사</span><span class="en">Managing Patent Attorney</span></h2><p class="sub"><span class="ko">기업과 대학, 로펌을 두루 경험한 실무 전문가</span><span class="en">A practitioner with experience across industry, academia and law firms</span></p>
+<div class="about"><div class="card profile hz"><img class="avatar" src="profile.jpg" alt="대표변리사 최홍걸"><div class="name"><span class="ko">최홍걸</span><span class="en">CHOI, Hong Geol</span></div><div style="color:var(--mute)"><span class="ko">대표변리사</span><span class="en">Managing Patent Attorney</span></div></div></div>
+<h3 class="subhead"><span class="ko">학력 및 활동 연혁</span><span class="en">Education &amp; Activities</span></h3>
+<div class="htl"><div class="hitem"><div class="hyear">1992</div><div class="htext"><span class="ko">춘천고등학교 졸업</span><span class="en">Graduated, Chuncheon High School</span></div></div><div class="hitem"><div class="hyear">1996</div><div class="htext"><span class="ko">한양대학교 공과대학 공업화학과 졸업</span><span class="en">Graduated, Chemical Engineering, Hanyang University</span></div></div><div class="hitem"><div class="hyear">2022–2024</div><div class="htext"><span class="ko">지식재산경영인증 심사위원</span><span class="en">Examiner, IP Management System Certification</span></div></div><div class="hitem"><div class="hyear">2024–2027</div><div class="htext"><span class="ko">경기도 고문 변리사</span><span class="en">Advisory Patent Attorney, Gyeonggi Province</span></div></div><div class="hitem"><div class="hyear">2026–2027</div><div class="htext"><span class="ko">특허심판원 국선대리인</span><span class="en">Appointed Public Representative, Intellectual Property Trial and Appeal Board</span></div></div></div>
+<h3 class="subhead" style="margin-top:40px"><span class="ko">경력</span><span class="en">Career</span></h3>
+<div class="htl career-h"><div class="hitem"><div class="htext"><span class="ko">ROTC 34기</span><span class="en">ROTC, 34th</span></div></div><div class="hitem"><div class="htext"><span class="ko">(주)에스원 (삼성그룹)</span><span class="en">S-1 Corporation (Samsung)</span></div></div><div class="hitem"><div class="htext"><span class="ko">김앤조특허법률사무소</span><span class="en">Kim &amp; Cho (KIMANDCHO) Patent Law Firm</span></div></div><div class="hitem"><div class="htext"><span class="ko">(주)KCC 특허팀</span><span class="en">Patent Team, KCC Corporation</span></div></div><div class="hitem"><div class="htext"><span class="ko">(주)루멘스 특허팀장</span><span class="en">Head of Patent Team, Lumens Co., Ltd.</span></div></div><div class="hitem"><div class="htext"><span class="ko">경희대학교산학협력단 선임변리사</span><span class="en">Senior Patent Attorney, Kyung Hee University Industry-Academic Cooperation Foundation</span></div></div><div class="hitem"><div class="htext"><span class="ko">퍼스트앤드포에버특허법률사무소</span><span class="en">First &amp; Forever Patent Law Firm</span></div></div><div class="hitem"><div class="htext"><span class="ko">투핸즈특허법률사무소 대표</span><span class="en">Principal, TWOHANDS Patent&amp;Trademark Office</span></div></div></div>
+</div></section>
+
+<section class="alt" id="office"><div class="wrap">
+<h2><span class="ko">사무소 소개</span><span class="en">About the Firm</span></h2><p class="sub"><span class="ko">수행 이력과 주요고객</span><span class="en">Track record and major clients</span></p>
+<h3 class="subhead"><span class="ko">연혁</span><span class="en">History</span></h3><p class="sub"><span class="ko">정부·공공기관 IP 지원사업 수행 이력</span><span class="en">Track record in government and public-agency IP support programs</span></p>
+<ul class="timeline">
+<li><b>'25~'27</b><span><span class="ko">수출지원기반활용사업 수행기관 (중소벤처기업진흥공단)</span><span class="en">Export Support Infrastructure Program provider (Korea SMEs and Startups Agency)</span></span></li>
+<li><b>'23</b><span><span class="ko">수출바우처사업 수행 (중소벤처기업진흥공단)</span><span class="en">Export Voucher Program (Korea SMEs and Startups Agency)</span></span></li>
+<li><b>'21</b><span><span class="ko">IP-R&amp;D 전략지원사업 (한국특허전략개발원)</span><span class="en">IP-R&amp;D Strategy Support Program (Korea Patent Strategy Development Institute)</span></span></li>
+<li><b>'20</b><span><span class="ko">IP-R&amp;D 전략지원사업-소재부품장비 R&amp;D 사업연계 (한국특허전략개발원)</span><span class="en">IP-R&amp;D Strategy Support Program, linked to Materials, Parts &amp; Equipment R&amp;D (Korea Patent Strategy Development Institute)</span><br><span class="ko">국제지재권분쟁 대응전략지원사업 (한국지식재산보호원)</span><span class="en">International IP Dispute Response Strategy Support Program (Korea Intellectual Property Protection Agency)</span><br><span class="ko">글로벌 IP 스타기업지원사업 (부산지식재산센터)</span><span class="en">Global IP Star Company Support Program (Busan IP Center)</span><br><span class="ko">중소기업 IP 나래지원사업 (대구지식재산센터)</span><span class="en">SME IP Narae Support Program (Daegu IP Center)</span></span></li>
+<li><b>'19</b><span><span class="ko">국제지재권분쟁 예방컨설팅지원사업 (한국지식재산보호원)</span><span class="en">International IP Dispute Prevention Consulting Support Program (Korea Intellectual Property Protection Agency)</span><br><span class="ko">중소기업 IP 바로지원사업 (부산지식재산센터)</span><span class="en">SME IP Baro Support Program (Busan IP Center)</span></span></li>
+</ul>
+
+<h3 class="subhead" style="margin-top:44px"><span class="ko">주요고객</span><span class="en">Major Clients</span></h3><p class="sub"><span class="ko">신뢰로 함께하는 고객사</span><span class="en">Clients who trust us</span></p>
+<div class="clients">
+<div class="client">KCC<small>KCC Corporation</small></div>
+<div class="client"><span class="ko">강원대학교<small>Kangwon National University</small></span><span class="en">Kangwon National University</span></div>
+<div class="client">WOOREE E&amp;L</div>
+<div class="client">CTLAB<small><span class="ko">(주)씨티랩</span><span class="en">CTLAB Co., Ltd.</span></small></div>
+<div class="client">DASAN<small><span class="ko">(주)다산제약</span><span class="en">Dasan Pharmaceutical Co., Ltd.</span></small></div>
+<div class="client">MEGATECH</div>
+<div class="client">Quantum Matrix</div>
+<div class="client">CYBERMED</div>
+<div class="client">BUSHIN Textile</div>
+<div class="client">Gaia3D, Inc.</div>
+</div>
+
+</div></section>
+
+<section id="services"><div class="wrap">
+<h2><span class="ko">업무소개</span><span class="en">Services</span></h2><p class="sub"><span class="ko">권리화부터 분쟁 대응을 위한 조사분석까지</span><span class="en">From filing to investigation for dispute response</span></p>
+<div class="grid">
+<div class="card"><h3><span class="ko">IP 권리화</span><span class="en">IP Rights Acquisition</span></h3><ul><li><span class="ko">특허·디자인·상표 국내출원</span><span class="en">Domestic patent, design and trademark filings</span></li><li><span class="ko">PCT 국제특허출원</span><span class="en">PCT international patent applications</span></li><li><span class="ko">특허·디자인·상표 해외출원</span><span class="en">Overseas patent, design and trademark filings</span></li><li><span class="ko">특허심판원 심판</span><span class="en">Trials at the Intellectual Property Trial and Appeal Board</span></li><li><span class="ko">특허법원 소송</span><span class="en">Patent Court litigation</span></li></ul></div>
+<div class="card"><h3><span class="ko">국내외 IP 조사분석</span><span class="en">Domestic &amp; Overseas IP Search &amp; Analysis</span></h3><ul><li><span class="ko">선행기술 조사분석</span><span class="en">Prior art search and analysis</span></li><li><span class="ko">무효자료 조사분석</span><span class="en">Invalidity evidence search and analysis</span></li><li><span class="ko">침해자료 조사분석</span><span class="en">Infringement evidence search and analysis</span></li></ul></div>
+<div class="card"><h3><span class="ko">IP 컨설팅</span><span class="en">IP Consulting</span></h3><ul><li><span class="ko">특허맵 작성</span><span class="en">Patent map preparation</span></li><li><span class="ko">IP 전략 컨설팅</span><span class="en">IP strategy consulting</span></li><li><span class="ko">정부·지자체 IP 지원사업 수행</span><span class="en">Government and local-government IP support programs</span></li></ul></div>
+<div class="card"><h3><span class="ko">기술거래·라이선싱</span><span class="en">Technology Transactions &amp; Licensing</span></h3><ul><li><span class="ko">기술거래 자문</span><span class="en">Technology transaction advisory</span></li><li><span class="ko">기술이전·라이선싱 자문</span><span class="en">Technology transfer and licensing advisory</span></li><li><span class="ko">라이선스 계약 검토·협상 지원</span><span class="en">License agreement review and negotiation support</span></li><li><span class="ko">특허 보증 계약</span><span class="en">Patent warranty agreements</span></li></ul></div>
+</div></div></section>
+
+<section class="alt" id="process"><div class="wrap"><h2><span class="ko">출원·심사·등록 절차</span><span class="en">Filing, Examination &amp; Registration</span></h2><p class="sub"><span class="ko">특허·상표·디자인 권리화 절차를 간략히 안내합니다</span><span class="en">A brief guide to the patent, trademark and design process</span></p><p class="callout"><span class="ko"><b>출원</b>은 지식재산처에 권리를 <b>신청</b>하는 절차이며, 심사를 거쳐 <b>등록</b>이 되어야 비로소 권리가 발생합니다.</span><span class="en">A <b>filing</b> is an <b>application</b> for rights submitted to the Ministry of Intellectual Property; rights arise only once the application passes examination and is <b>registered</b>.</span></p><div class="grid" style="grid-template-columns:1fr"><div class="card"><h3><span class="ko">특허</span><span class="en">Patent</span></h3><ol class="flow"><li><span class="ko">출원<br>(명세서·청구범위)</span><span class="en">Filing<br>(specification &amp; claims)</span></li><li><span class="ko">방식심사</span><span class="en">Formality check</span></li><li><span class="ko">출원공개 · 심사청구</span><span class="en">Publication · Request for examination</span></li><li><span class="ko">실체심사<br>(의견서·보정서)</span><span class="en">Substantive examination<br>(response &amp; amendment)</span></li><li><span class="ko">특허결정</span><span class="en">Grant decision</span></li><li><span class="ko">등록료 납부<br>설정등록</span><span class="en">Fee payment<br>Registration</span></li></ol></div><div class="card"><h3><span class="ko">상표</span><span class="en">Trademark</span></h3><ol class="flow"><li><span class="ko">출원</span><span class="en">Filing</span></li><li><span class="ko">방식심사</span><span class="en">Formality check</span></li><li><span class="ko">실체심사<br>(의견서)</span><span class="en">Substantive examination<br>(response)</span></li><li><span class="ko">출원공고<br>(이의신청 기간)</span><span class="en">Publication<br>(opposition period)</span></li><li><span class="ko">등록결정</span><span class="en">Registration decision</span></li><li><span class="ko">등록료 납부<br>설정등록</span><span class="en">Fee payment<br>Registration</span></li></ol></div><div class="card"><h3><span class="ko">디자인</span><span class="en">Design</span></h3><ol class="flow"><li><span class="ko">출원</span><span class="en">Filing</span></li><li><span class="ko">방식심사</span><span class="en">Formality check</span></li><li><span class="ko">심사<br>(또는 무심사등록)</span><span class="en">Examination<br>(or registration without examination)</span></li><li><span class="ko">등록결정</span><span class="en">Registration decision</span></li><li><span class="ko">등록료 납부<br>설정등록</span><span class="en">Fee payment<br>Registration</span></li></ol></div></div><p class="note"><span class="ko">※ 국내(한국) 기준의 일반적인 절차이며, 사안과 출원 유형에 따라 단계와 기간이 달라질 수 있습니다.</span><span class="en">※ General procedure in Korea. Steps and timelines may vary depending on the case and type of application.</span></p></div></section>
+
+<section id="contact"><div class="wrap contact">
+<h2><span class="ko">연락처</span><span class="en">Contact</span></h2><p class="sub"><span class="ko">언제든지 문의해 주세요</span><span class="en">Feel free to reach out</span></p>
+<p><b><span class="ko">주소</span><span class="en">Address</span></b> <span class="ko">16512 경기도 수원시 영통구 광교중앙로 232, 304호 (하동, 드림타워 4)</span><span class="en">304, Dream Tower 4 (Hadong), 232 Gwanggyo-jungang-ro, Yeongtong-gu, Suwon-si, Gyeonggi-do 16512, Republic of Korea</span></p>
+<p><b><span class="ko">전화</span><span class="en">Phone</span></b> <a href="tel:01051949282"><span class="ko">010-5194-9282</span><span class="en">+82-10-5194-9282</span></a></p>
+<p><b><span class="ko">이메일</span><span class="en">Email</span></b> <a href="mailto:twohands.ip@gmail.com" target="_blank" rel="noopener">twohands.ip@gmail.com</a> · <a href="mailto:hgchoi9282@gmail.com" target="_blank" rel="noopener">hgchoi9282@gmail.com</a></p>
+<iframe class="map" title="TWOHANDS IP map" src="https://www.google.com/maps?q=%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EC%88%98%EC%9B%90%EC%8B%9C%20%EC%98%81%ED%86%B5%EA%B5%AC%20%EA%B4%91%EA%B5%90%EC%A4%91%EC%95%99%EB%A1%9C%20232&amp;hl=ko&amp;z=17&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+<p class="maplink"><a href="https://www.google.com/maps/search/?api=1&amp;query=%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EC%88%98%EC%9B%90%EC%8B%9C%20%EC%98%81%ED%86%B5%EA%B5%AC%20%EA%B4%91%EA%B5%90%EC%A4%91%EC%95%99%EB%A1%9C%20232" target="_blank" rel="noopener"><span class="ko">구글 지도에서 크게 보기 →</span><span class="en">View larger map →</span></a></p>
+</div></section>
+
+<footer><div class="wrap"><span class="ko">© 투핸즈특허법률사무소 · 대표변리사 최홍걸</span><span class="en">© TWOHANDS IP · CHOI, Hong Geol (Managing Patent Attorney)</span></div></footer>
+<script>
+(function(){var h=document.documentElement,T={ko:document.title,en:"TWOHANDS IP | Patent & Trademark Law Firm"};
+function set(l){h.lang=l;document.title=T[l];try{localStorage.setItem("lang",l)}catch(e){}}
+var l="ko";try{l=localStorage.getItem("lang")||"ko"}catch(e){}
+set(l==="en"?"en":"ko");
+document.getElementById("lang").addEventListener("click",function(e){e.preventDefault();set(h.lang==="en"?"ko":"en")});
+})();
+</script>
+</body>
+</html>
